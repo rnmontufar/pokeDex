@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";  
+import { useSelector } from "react-redux";
 import { Cards } from "../../components/cards";
 import { getPokemons } from "./redux/actions";
 import { getPokemonsResult, isLoadingGetPokemonsResult } from "./redux/selectors";
@@ -13,13 +13,17 @@ export function MainView() {
 
   useEffect(() => {
     setInitialState(true);
-    dispatch(getPokemons({payload: "pikachu" }));
+    dispatch(getPokemons({ payload: "pikachu" }));
   }, [dispatch]);
 
   return (
     <div>
       <header >
-        {!isLoadingpokemonsReponse && initialState ? <Cards pokemons={pokemons}/> : "Loading.."}
+        {!isLoadingpokemonsReponse && initialState ? <Cards pokemons={pokemons} /> :
+          <div className="flex justify-center m-auto mt-3 transform translate-x-10 translate-y-4 text-base">
+            Loading...
+          </div>
+        }
       </header>
     </div>
   )
