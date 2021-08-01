@@ -3,6 +3,7 @@ import { colors200, colors400 } from "../../helpers/helpers";
 
 export function PokeDetails(props: any) {
   const pokemon = props.location.state.pokemon;
+  
   return (
     <div className="mt-6 ">
       <div className="flex flex-wrap items-stretch justify-center m-auto max-w-xl">

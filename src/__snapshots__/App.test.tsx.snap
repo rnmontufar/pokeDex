@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Cards 1`] = `
+<div
+  className="bg-gradient-to-r from-green-100 via-red-300 to-yellow-600 mt-6"
+>
+  <div
+    className="flex flex-wrap items-stretch justify-center m-auto max-w-6xl"
+  >
+    <div
+      className="bg-green-200 bg-opacity-40 rounded-xl m-2 p-3 shadow-2xl hover:bg-opacity-20 cursor-pointer"
+      onClick={[Function]}
+    >
+      <div
+        className="bg-gray-100 h-36 w-36 rounded-full mx-auto"
+      >
+        <img
+          alt="bulbasaur"
+          className="h-15 w-15 m-auto h-36 w-36"
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"
+        />
+      </div>
+      <div
+        className="mt-4"
+      >
+        <span
+          className="text-gray-500 text-xs rounded-xl px-2 bg-yellow-200"
+        >
+          #001
+        </span>
+        <div
+          className="text-gray-900 text-lg"
+        >
+          Bulbasaur
+        </div>
+      </div>
+      <div
+        className="mt-1"
+      >
+        <span
+          className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800 mr-1"
+        >
+          Grass
+        </span>
+      </div>
+      <div
+        className="mt-1"
+      >
+        <span
+          className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-300 text-blue-800 mr-1"
+        >
+          Overgrow
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Render MainView 1`] = `
+<div>
+  <header>
+    <div
+      className="flex justify-center m-auto mt-3 transform translate-x-10 translate-y-4 text-base"
+    >
+      Loading...
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Render PokeDetails 1`] = `
+<div
+  className="mt-6 "
+>
+  <div
+    className="flex flex-wrap items-stretch justify-center m-auto max-w-xl"
+  >
+    <figure
+      className="bg-green-400 bg-opacity-70 m-2 p-3 shadow-2xl hover:bg-opacity-90 bg-gray-100 rounded-xl p-8\\">"
+    >
+      <div
+        className="bg-gray-100 h-36 w-36 rounded-full mx-auto"
+      >
+        <img
+          alt="bulbasaur"
+          className="w-32 h-32 rounded-full mx-auto"
+          height="512"
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"
+          width="384"
+        />
+        <span
+          className="text-gray-500 text-xs rounded-xl px-2 bg-yellow-200"
+        >
+          #001
+        </span>
+        <div
+          className="text-gray-900 text-lg text-center"
+        >
+          Bulbasaur
+        </div>
+      </div>
+      <div>
+        <blockquote>
+          <div
+            className="mt-6"
+          >
+            <span
+              className="text-sm mr-1"
+            >
+              Weight:
+            </span>
+            <span
+              className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-blue-900 mr-1"
+            />
+            <div
+              className="mt-1"
+            >
+              <span
+                className="text-sm mr-1"
+              >
+                Height:
+              </span>
+              <span
+                className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-blue-900 mr-1"
+              />
+            </div>
+            <div
+              className="mt-1"
+            >
+              <span
+                className="text-sm mr-1"
+              >
+                Type:
+              </span>
+              <span
+                className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-blue-900 mr-1"
+              >
+                Grass
+              </span>
+            </div>
+            <div
+              className="mt-1"
+            >
+              <span
+                className="text-sm mr-1"
+              >
+                Abilities:
+              </span>
+              <span
+                className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-gray-900 mr-1"
+              >
+                Overgrow
+              </span>
+            </div>
+            <div
+              className="mt-1"
+            >
+              <span
+                className="text-sm mr-1"
+              >
+                Moves:
+              </span>
+              <span
+                className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-gray-900 mr-1"
+              >
+                Razor-wind
+              </span>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+    </figure>
+  </div>
+</div>
+`;

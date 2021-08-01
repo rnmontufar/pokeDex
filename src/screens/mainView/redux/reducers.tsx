@@ -1,8 +1,6 @@
 import { GET_POKEMONS_START, GET_POKEMONS_ERROR, GET_POKEMONS_COMPLETED, GET_POKEMONS_RESET } from "./constants";
 
-const initialState = {
-  pokemons: [{name:'chara'}],
-  isLoaing: true};
+const initialState = {};
 
 export function getPokemons(state = initialState, action:any) {
   switch (action.type) {
