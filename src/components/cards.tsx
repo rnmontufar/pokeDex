@@ -16,8 +16,8 @@ export function Cards(props: any) {
     <div className="bg-gradient-to-r from-green-100 via-red-300 to-yellow-600 mt-6">
       <div className="flex flex-wrap items-stretch justify-center m-auto max-w-6xl">
         {pokemons.map((pokemon: any) => (
-          <div className={`bg-${getColor(pokemon.types[0].type.name)}-200 rounded-xl m-2 p-3 shadow-2xl hover:bg-opacity-20 cursor-pointer`} onClick={()=>handleClick(pokemon)}>
-          <div className="bg-gray-100 h-36 w-36 rounded-full mx-auto">
+          <div key={pokemon.id} className={`${'bg-' + getColor(pokemon.types[0].type.name) + '-200'} rounded-xl m-2 p-3 shadow-2xl hover:bg-opacity-20 cursor-pointer`} onClick={() => handleClick(pokemon)}>
+            <div className="bg-gray-100 h-36 w-36 rounded-full mx-auto">
               <img className="h-15 w-15 m-auto h-36 w-36" src={pokemon.sprites.front_default} alt={pokemon.name} />
             </div>
             <div className="mt-4">

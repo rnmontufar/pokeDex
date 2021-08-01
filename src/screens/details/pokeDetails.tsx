@@ -16,7 +16,7 @@ export function PokeDetails(props: any) {
             <blockquote>
               <div className="mt-6">
                 <span className="text-sm mr-1">Weight:</span>
-                <span key={pokemon.weight} className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-${getColor(pokemon.types[0].type.name)}-200 text-blue-900 mr-1`}>
+                <span key={pokemon.weight} className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${getColor(pokemon.types[0].type.name)}-200 text-blue-900 mr-1`}>
                   {pokemon.weight}
                 </span>
                 <div className="mt-1">

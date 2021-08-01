@@ -13,7 +13,7 @@ export function MainView() {
 
   useEffect(() => {
     setInitialState(true);
-    dispatch(getPokemons({payload: "pikachu", id:2 }));
+    dispatch(getPokemons({payload: "pikachu" }));
   }, [dispatch]);
 
   return (
