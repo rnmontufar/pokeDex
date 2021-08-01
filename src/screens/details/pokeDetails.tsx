@@ -6,7 +6,7 @@ export function PokeDetails(props: any) {
   return (
     <div className="mt-6 ">
       <div className="flex flex-wrap items-stretch justify-center m-auto max-w-xl">
-        <figure className={`${colors400[pokemon.types[0].type.name]} m-2 p-3 shadow-2xl hover:bg-opacity-90 bg-gray-100 rounded-xl p-8">`}>
+        <figure className={`${colors400[pokemon.types[0].type.name]} bg-opacity-70 m-2 p-3 shadow-2xl hover:bg-opacity-90 bg-gray-100 rounded-xl p-8">`}>
           <div className="bg-gray-100 h-36 w-36 rounded-full mx-auto">
             <img className="w-32 h-32 rounded-full mx-auto" src={pokemon.sprites.front_default} alt={pokemon.name} width="384" height="512" />
             <span className="text-gray-500 text-xs rounded-xl px-2 bg-yellow-200">{'#' + pokemon.id.toString().padStart(3, '0')}</span>
@@ -16,7 +16,7 @@ export function PokeDetails(props: any) {
             <blockquote>
               <div className="mt-6">
                 <span className="text-sm mr-1">Weight:</span>
-                <span key={pokemon.weight} className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-fu${colors200[pokemon.types[0].type.name]} text-blue-900 mr-1`}>
+                <span key={pokemon.weight} className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${colors200[pokemon.types[0].type.name]} text-blue-900 mr-1`}>
                   {pokemon.weight}
                 </span>
                 <div className="mt-1">
