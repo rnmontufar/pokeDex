@@ -1,4 +1,4 @@
-const colors: { [key: string]: any } = {
+const colors: { [key: string]: string } = {
   fire: 'red',
   grass: 'green',
   electric: 'yellow',
@@ -16,6 +16,6 @@ const colors: { [key: string]: any } = {
   ice: 'gray'
 };
 
-export function  getColor (name: any) {
+export function  getColor (name: string) {
   return colors[name];
 };
