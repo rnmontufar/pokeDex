@@ -1,21 +1,40 @@
-const colors: { [key: string]: string } = {
-  fire: 'red',
-  grass: 'green',
-  electric: 'yellow',
-  water: 'blue',
-  ground: 'yellow',
-  rock: 'gray',
-  fairy: 'blue',
-  poison: 'gray',
-  bug: 'gray',
-  dragon: 'red',
-  psychic: 'pink',
-  flying: 'yellow',
-  fighting: 'blue',
-  normal: 'pink',
-  ice: 'gray'
+export const colors400: { [key: string]: string } = {
+  fire: 'bg-red-400',
+  grass: 'bg-green-400',
+  electric: 'bg-yellow-400',
+  water: 'bg-blue-400',
+  ground: 'bg-yellow-400',
+  rock: 'bg-gray-400',
+  fairy: 'bg-blue-400',
+  poison: 'bg-gray-400',
+  bug: 'bg-gray-400',
+  dragon: 'bg-red-400',
+  psychic: 'bg-pink-400',
+  flying: 'bg-yellow-400',
+  fighting: 'bg-blue-400',
+  normal: 'bg-pink-400',
+  ice: 'bg-gray-400'
 };
 
-export function  getColor (name: string) {
-  return colors[name];
+export const colors200: { [key: string]: string } = {
+  fire: 'bg-red-200',
+  grass: 'bg-green-200',
+  electric: 'bg-yellow-200',
+  water: 'bg-blue-200',
+  ground: 'bg-yellow-200',
+  rock: 'bg-gray-200',
+  fairy: 'bg-blue-200',
+  poison: 'bg-gray-200',
+  bug: 'bg-gray-200',
+  dragon: 'bg-red-200',
+  psychic: 'bg-pink-200',
+  flying: 'bg-yellow-200',
+  fighting: 'bg-blue-200',
+  normal: 'bg-pink-200',
+  ice: 'bg-gray-200'
+};
+
+
+export function  getColor (name: string, number: number) {
+  return 'bg-' + colors400[name] + '-' + number;
 };
