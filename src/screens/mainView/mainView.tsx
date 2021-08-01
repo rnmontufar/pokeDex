@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";  
-import { Table } from "../../components/table";
+import { Cards } from "../../components/cards";
 import { getPokemons } from "./redux/actions";
 import { getPokemonsResult, isLoadingGetPokemonsResult } from "./redux/selectors";
 
@@ -9,7 +9,6 @@ export function MainView() {
   const dispatch = useDispatch();
   const pokemons = useSelector(getPokemonsResult)
   const isLoadingpokemonsReponse = useSelector(isLoadingGetPokemonsResult)
-  console.log("view: ",pokemons);
   const [initialState, setInitialState] = useState(false);
 
   useEffect(() => {
@@ -20,7 +19,7 @@ export function MainView() {
   return (
     <div>
       <header >
-        {!isLoadingpokemonsReponse && initialState ? <Table pokemons={pokemons}/> : "Loading.."}
+        {!isLoadingpokemonsReponse && initialState ? <Cards pokemons={pokemons}/> : "Loading.."}
       </header>
     </div>
   )

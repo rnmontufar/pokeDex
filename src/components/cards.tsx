@@ -1,8 +1,7 @@
 import { useHistory } from "react-router-dom";
+import { getColor } from "../helpers/helpers";
 
-/* eslint-disable jsx-a11y/alt-text */
-export function Table(props: any) {
-  console.log(props.pokemons);
+export function Cards(props: any) {
   let { pokemons } = props;
   let history = useHistory();
 
@@ -13,33 +12,11 @@ export function Table(props: any) {
     });
   }
 
-  const colors: { [key: string]: any } = {
-    fire: 'red-100',
-    grass: 'green-100',
-    electric: 'yellow-100',
-    water: 'blue-200',
-    ground: 'yellow-100',
-    rock: 'gray-200',
-    fairy: 'blue-200',
-    poison: 'gray-200',
-    bug: 'gray-300',
-    dragon: 'red-200',
-    psychic: 'pink-200',
-    flying: 'yellow-200',
-    fighting: 'blue-300',
-    normal: 'pink-100',
-    ice: 'gray-100'
-  };
-
-  const getColor = (name: any) => {
-    return colors[name];
-  };
-
   return (
     <div className="bg-gradient-to-r from-green-100 via-red-300 to-yellow-600 mt-6">
       <div className="flex flex-wrap items-stretch justify-center m-auto max-w-6xl">
         {pokemons.map((pokemon: any) => (
-          <div className={`bg-${getColor(pokemon.types[0].type.name)} rounded-xl m-2 p-3 shadow-2xl hover:bg-opacity-20 cursor-pointer`} onClick={()=>handleClick(pokemon)}>
+          <div className={`bg-${getColor(pokemon.types[0].type.name)}-200 rounded-xl m-2 p-3 shadow-2xl hover:bg-opacity-20 cursor-pointer`} onClick={()=>handleClick(pokemon)}>
           <div className="bg-gray-100 h-36 w-36 rounded-full mx-auto">
               <img className="h-15 w-15 m-auto h-36 w-36" src={pokemon.sprites.front_default} alt={pokemon.name} />
             </div>
